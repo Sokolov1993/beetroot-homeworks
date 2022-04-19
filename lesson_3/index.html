@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Семантичні елементи</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>HTML5 Семантичні елементи</h1>
+      <nav id="navbar">
+        <ul>
+          <li>
+            <a href="#designation"
+              >Різниця між семантичними і несемантичними тегами</a
+            >
+          </li>
+          <li><a href="#browsers_support">Підтримка браузерів</a></li>
+          <li>
+            <a href="#new_html5_semantic_elements"
+              >Нові семантичні елементи в HTML5</a
+            >
+          </li>
+          <li>
+            <a href="#html5_<section>_element"
+              >HTML5 <code>&lt;section&gt;</code> елемент</a
+            >
+          </li>
+          <li>
+            <a href="#html5_<article>_element"
+              >HTML5 <code>&lt;article&gt;</code> елемент</a
+            >
+          </li>
+          <li>
+            <a href="#html5_<header>_element"
+              >HTML5 <code>&lt;header&gt;</code> елемент</a
+            >
+          </li>
+          <li>
+            <a href="#html5_<footer>_element"
+              >HTML5 <code>&lt;footer&gt;</code> елемент</a
+            >
+          </li>
+          <li>
+            <a href="#resume">Резюме</a>
+          </li>
+          <li>
+            <a href="#beetroot_video">Відео Beetroot</a>
+          </li>
+          <li>
+            <a href="#form">Зареєструватися</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="designation">
+        <br />
+        <h2>Різниця між семантичними і несемантичними тегами</h2>
+        <p>
+          Семантичний елемент чітко описує його значення як для браузера, так і
+          для розробника.
+        </p>
+        <p>
+          Приклади не <b>семантичних елементів:</b>
+          <code> &lt;div&gt; і &lt;span&gt; </code>- нічого не говорять про його
+          вміст.
+        </p>
+        <p>
+          Приклади <b>семантичних</b> елементів:<code>
+            &lt;form&gt;, &lt;table&gt; і &lt;article&gt; -
+          </code>
+          чітко визначають його зміст.
+        </p>
+      </section>
+      <section id="browsers_support">
+        <br />
+        <h2>Підтримка браузерів</h2>
+        <div>
+          <figure>
+            <img
+              src="./assets/images/browsers/Browsers2.png"
+              alt="browsers: chrome, edge, mozilla, safari, opera"
+              usemap="#browsermap"
+              width="300"
+              height="84"
+            />
+            <figcaption>Іконки - клікабельні</figcaption>
+          </figure>
+          <map name="browsermap">
+            <area
+              shape="circle"
+              coords="37,43,30"
+              href="https://www.google.com/intl/uk_ua/chrome/"
+              alt="chrome"
+              target="_blank"
+            />
+            <area
+              shape="circle"
+              coords="107,41,33"
+              href="https://www.mozilla.org/uk/firefox/new/"
+              alt="mozilla"
+              target="_blank"
+            />
+            <area
+              shape="circle"
+              coords="182,41,31"
+              href="https://www.microsoft.com/uk-ua/edge"
+              alt="edge"
+              target="_blank"
+            />
+            <area
+              shape="circle"
+              coords="256,42,33"
+              href="https://www.opera.com/uk"
+              alt="opera"
+              target="_blank"
+            />
+          </map>
+        </div>
+        <p>
+          Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.
+          <br />
+          <br />
+          Крім того, ви можете "навчити" старих браузерів, як обробляти
+          "невідомі елементи".
+          <br />
+          <br />
+          Перевірте - чи підтримує
+          <a href="https://www.lambdatest.com/form-features" target="_blank"
+            >ваш браузер</a
+          >
+          HTML5.
+        </p>
+      </section>
+      <section id="new_html5_semantic_elements">
+        <br />
+        <h2>Нові семантичні елементи в HTML5</h2>
+        <p>
+          HTML5 пропонує нові семантичні елементи для визначення різних частин
+          веб-сторінки:
+        </p>
+        <ul>
+          <code>
+            <li>&lt;section&gt;</li>
+            <li>&lt;article&gt;</li>
+            <li>&lt;header&gt;</li>
+            <li>&lt;footer&gt;</li>
+          </code>
+        </ul>
+      </section>
+      <section id="html5_<section>_element">
+        <br />
+        <h2>HTML5 <code>&lt;section&gt;</code> елемент</h2>
+        <p>Елемент <code>&lt;section&gt;</code> визначає розділ в документі.</p>
+        <p>
+          Згідно з документацією в3к'с HTML5: "розділ представляє собою
+          тематичну угруповання контенту, зазвичай з заголовком".
+        </p>
+        <p>
+          Домашня сторінка зазвичай може бути розділена на розділи для
+          ознайомлення, змісту і контактної інформації.
+        </p>
+        <div>
+          <a
+            href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_section"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/section_element.jpg"
+              alt="Examples of where a <section> element can be used"
+              width="900"
+              height="310"
+          /></a>
+        </div>
+      </section>
+      <section id="html5_<article>_element">
+        <br />
+        <h2>HTML5 <code>&lt;article&gt;</code> елемент</h2>
+        <p>
+          Елемент <code>&lt;article&gt;</code> визначає незалежний, автономний
+          вміст.
+        </p>
+        <p>
+          Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+          читати його незалежно від іншої частини веб-сайту.
+        </p>
+        <p>Приклади того, де можна використовувати елемент &lt;article&gt; :</p>
+        <div>
+          <ul>
+            <li>Повідомлення на форумі</li>
+            <li>В блозі</li>
+            <li>У газетній статті</li>
+          </ul>
+        </div>
+        <div>
+          <a
+            href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_article"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/article_element.jpg"
+              alt="Example of where a <article> element can be used"
+              width="900"
+              height="auto"
+            />
+          </a>
+        </div>
+      </section>
+      <selection id="html5_<header>_element">
+        <br />
+        <h2>HTML5 <code>&lt;header&gt;</code> елемент</h2>
+        <p>
+          Елемент <code>&lt;header&gt;</code> задає заголовок для документа або
+          розділу
+        </p>
+        <p>
+          Елемент <code>&lt;header&gt;</code> повинен використовуватися в якості
+          контейнера для вступного змісту.
+        </p>
+        <p>
+          В одному документі може бути кілька елементів
+          <code>&lt;header&gt;</code>.
+        </p>
+        <p>У наступному прикладі визначається заголовок для статті:</p>
+        <div>
+          <a
+            href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_header"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/header_element.jpg"
+              alt="Example of where a <article> element can be used"
+              width="900"
+              height="auto"
+            />
+          </a>
+        </div>
+      </selection>
+      <section id="html5_<footer>_element">
+        <br />
+        <h2>HTML5 <code>&lt;footer&gt;</code> елемент</h2>
+        <p>
+          Елемент <code>&lt;footer&gt;</code> вказує нижній колонтитул для
+          документа або розділу.
+        </p>
+        <p>
+          Нижній колонтитул зазвичай містить автора документа, інформацію про
+          авторське право, посилання на умови використання, контактні дані і
+          т.д.
+        </p>
+        <p>
+          В одному документі може бути кілька елементів
+          <code>&lt;footer&gt;</code>.
+        </p>
+        <div>
+          <a
+            href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_footer"
+            target="_blank"
+          >
+            <img
+              src="./assets/images/footer_element.jpg"
+              alt="Example of where a <article> element can be used"
+              width="900"
+              height="auto"
+            />
+          </a>
+        </div>
+      </section>
+      <section id="resume">
+        <br />
+        <br />
+        <h2>Резюме:</h2>
+        <iframe
+          src="https://sokolov1993.github.io/beetroot-homeworks/lesson_1_test-site_CV/index.html"
+          height="500px"
+          width="500px"
+        ></iframe>
+      </section>
+      <section id="beetroot_video">
+        <br />
+        <br />
+        <h2>Відео Beetroot Academy</h2>
+        <iframe
+          width="500"
+          height="300"
+          src="https://www.youtube.com/embed/FII4DRuiLLI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section id="form">
+        <br />
+        <br />
+        <h2>Зареєструватися</h2>
+        <form name="registration">
+          <label for="name">Ім'я</label>
+          <input
+            type="text"
+            placeholder="введіть ваше ім'я"
+            id="name"
+            required
+          />
+          <br />
+          <br />
+          <label for="surname">Прізвище</label>
+          <input
+            type="text"
+            placeholder="введіть ваше прізвище"
+            id="surname"
+            required
+          />
+          <br />
+          <br />
+          <label for="email">Електронна пошта</label>
+          <input
+            type="email"
+            placeholder="введіть ваш email"
+            id="email"
+            required
+          />
+          <br />
+          <br />
+          <label for="password">Пароль</label>
+          <input
+            type="password"
+            placeholder="введіть пароль"
+            id="password"
+            required
+          />
+          <br />
+          <br />
+          <button type="submit">Зареєструватися</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <br />
+      <br />
+      <small> Copyright. All Rights Reserved.</small>
+      <br />
+      <small><a href="#header">To navigation bar</a></small>
+    </footer>
+  </body>
+</html>
