@@ -1,0 +1,180 @@
+h1,
+p,
+label {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.background {
+  width: 1920px;
+  height: 1280px;
+  background-color: aquamarine;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header_group_property {
+  width: 793px;
+  height: 82px;
+  background-color: #4a4f56;
+  font-family: "Roboto";
+  color: #ff8984;
+  margin: 100px 400px 0px;
+  display: inline-block;
+}
+
+div > h1 {
+  font-size: 24px;
+  line-height: 28.13px;
+  font-weight: 700;
+  padding-top: 19px;
+  padding-left: 247px;
+}
+
+h1 + p {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  padding-left: 316px;
+  padding-top: 4px;
+}
+
+.checkbox_group_property {
+  width: 793px;
+  height: 405px;
+  background-color: #3b3f45;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 21.09px;
+  color: #ffffff;
+  margin: 0px 400px;
+  padding-top: 20px;
+}
+
+.checkbox_group_property label {
+  display: block;
+  width: 509px;
+  height: 21px;
+  background-color: #88839e;
+  margin-left: 129px;
+  padding: 12px;
+}
+
+.checkbox_group_property label:nth-child(even) {
+  background-color: #7a7593;
+}
+
+.checkbox_group_property label span span {
+  font-size: 11px;
+  line-height: 12.9px;
+}
+
+.checkbox_group_property label:hover {
+  background-color: #625e77;
+  border-style: solid;
+  border-width: 3px 0px;
+}
+
+.checkbox_group_property label:active {
+  background-color: #ff8984;
+}
+
+.input_field:checked + span + span {
+  text-decoration: line-through;
+}
+
+/* customize  defoult checkbox */
+/* hide default checkbox */
+.input_field {
+  position: absolute;
+  opacity: 0;
+}
+
+/* create new checkbox checkbox */
+.fake_span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10%;
+  position: relative;
+  background-color: #88839e;
+  box-shadow: 1px 1px 5px black;
+  margin-right: 10px;
+}
+
+/* customize checked checkbox*/
+.fake_span::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50, -50%);
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ff8984;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+/* show checked element before click */
+.input_field:checked + .fake_span::before {
+  opacity: 1;
+}
+
+.accept_button_container {
+  width: 534px;
+  height: 45px;
+  /* background-color: #4a4f56; */
+  margin-top: 45px;
+  margin-left: 129px;
+}
+
+.accept_button_container > button {
+  width: 534px;
+  height: 45px;
+}
+
+button[type="submit"] {
+  /* сброс стилей */
+  padding: 0;
+  border: none;
+  font: Roboto;
+  color: #ff8984;
+  background-color: transparent;
+  cursor: pointer;
+
+  /* переопределение стилей для ссылок */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* невидимая рамка */
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  /* для установки размеров используем паддинги */
+  padding: 0.5em 1em;
+  /* контрастные цвета */
+
+  background-color: #4a4f56;
+}
+
+button[type="submit"]:active {
+  transform: translateY(1px);
+  filter: saturate(150%);
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  color: #ff8984;
+  border-color: #4a4f56;
+  background-color: #625e77;
+}
+
+/* сброс браузерных стилей для фокуса */
+button[type="submit"] ::-moz-focus-inner {
+  border: none;
+}
