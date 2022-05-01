@@ -1,0 +1,291 @@
+@import url("https://fonts.google.com/share?selection.family=Roboto:wght@100;900");
+@import url(https://fonts.google.com/share?selection.family=Roboto:wght@100;900);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+code {
+  background-color: antiquewhite;
+}
+
+.wrapper {
+  height: 937px;
+}
+
+.background_image {
+  position: fixed;
+  left: 1270px;
+  top: 261px;
+  z-index: 0;
+}
+
+.container_for_header_and_logo {
+  width: 1840px;
+  height: 55px;
+  top: 16px;
+  left: 40px;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+}
+
+.container_for_header_and_logo a {
+  padding-right: 2px;
+}
+
+.language_img {
+  width: 41px;
+  height: 23px;
+  top: 16px;
+  position: absolute;
+}
+
+.text_in_header {
+  display: inline-block;
+  position: absolute;
+  left: 123px;
+  top: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.text_in_header li {
+  list-style: none;
+  display: inline;
+}
+
+.company_logo {
+  width: 243px;
+  position: absolute;
+  right: 40.1px;
+}
+
+.navigation_sidebar {
+  /* width: 1920px; Не бачу сенсу додавати, бо через нижні бордери під пунктами навігації, які беззмістовно виділяти у окремий блок, у тебе з'явиться скроллбар по осі x*/
+  height: 478px;
+  position: sticky;
+  padding-left: 74px;
+  top: 121px;
+}
+
+.ordered_list_for_sidebar li {
+  font-weight: 400;
+  font-size: 20.988px;
+  line-height: 25px;
+  border-bottom: 1px solid #bfbfbf;
+  margin-top: 92px;
+  z-index: 0;
+}
+
+.ordered_list_for_sidebar li span {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.04em;
+}
+
+.container_for_main {
+  position: absolute;
+  width: 1160px;
+  top: 121px;
+  left: 720px;
+  z-index: 1;
+}
+
+.border_for_main {
+  display: inline-block;
+  width: 80px;
+  border: 10px solid #000000;
+  margin-bottom: 35px;
+}
+
+.main_title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 30px;
+}
+
+.main_paragraph_text {
+  font-family: "PT Sans";
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 50px;
+}
+
+/* Styles for Who's using page*/
+
+.whos_using_title_container {
+  position: relative;
+  width: 309px;
+  height: 42px;
+  top: 169px;
+  left: 41px;
+  display: inline-block;
+}
+
+.border_for_title_whos_using {
+  position: absolute;
+  width: 80px;
+  border: 12px solid #000000;
+  top: 9px;
+}
+
+.whos_using_title_container h1 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  left: 115px;
+}
+
+.container_for_main_elements_1 {
+  height: 318px;
+  width: 1920px;
+  top: 220px;
+  position: relative;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.container_for_main_elements_2 {
+  height: 318px;
+  width: 1920px;
+  top: 220px;
+  position: relative;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.transform_fb {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/facebook.png);
+}
+
+.transform_fb:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/facebook.png);
+}
+
+.transform_inst {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/Instagram.png);
+}
+
+.transform_inst:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/Instagram.png);
+}
+
+.transform_shopify {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/Shopify.png);
+}
+
+.transform_shopify:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/Shopify.png);
+}
+
+.transform_skype {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/Skype.png);
+}
+
+.transform_skype:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/Skype.png);
+}
+
+.transform_pinterest {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/Pinterest.png);
+}
+
+.transform_pinterest:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/Pinterest.png);
+}
+
+.transform_wix {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/Wix.png);
+}
+
+.transform_wix:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/Wix.png);
+}
+
+.transform_saleforce {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/Salesforce.png);
+}
+
+.transform_saleforce:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/Salesforce.png);
+}
+
+.transform_soundcloud {
+  margin: 19px 13.3px 40px;
+  width: 440px;
+  height: 280px;
+  display: inline-block;
+  background-image: url(../assets/images/main_content_page_2/light_logos/Soundcloud.png);
+}
+.transform_soundcloud:hover {
+  cursor: pointer;
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url(../assets/images/main_content_page_2/dark_logos/Soundcloud.png);
+}

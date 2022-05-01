@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 9 konstrukt_figma</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container_for_header_and_logo">
+          <img
+            src="./assets/images/header/lang.svg"
+            alt="site language"
+            class="language_img"
+          />
+          <ul class="text_in_header">
+            <li><a href="#"> Documentation</a></li>
+            <li>/</li>
+            <li><a href="./pages/whos_using_page.html"> Who's using </a></li>
+          </ul>
+          <img
+            src="./assets/images/header/company-logo-black.svg"
+            alt="Konstrukt company logo"
+            class="company_logo"
+          />
+        </div>
+      </header>
+      <aside class="navigation_sidebar">
+        <ol class="ordered_list_for_sidebar">
+          <li>
+            <a href="#intro"><span>INTRODUCTION</span></a>
+          </li>
+          <li>
+            <a href="#core_components"><span>CORE COMPONENTS</span></a>
+          </li>
+          <li>
+            <a href="#react_fundamentals"><span>REACT FUNDAMENTALS</span></a>
+          </li>
+          <li>
+            <a href="#handling_text_input"><span>HANDLING TEXT INPUT</span></a>
+          </li>
+        </ol>
+      </aside>
+      <div class="background_image">
+        <img
+          src="./assets/images/main/background_main.png"
+          alt="background image"
+        />
+      </div>
+    </div>
+    <main>
+      <div class="container_for_main">
+        <span class="border_for_main" id="intro"></span>
+        <p class="main_title">INTRODUCTION</p>
+        <p class="main_paragraph_text">
+          Welcome to the very start of your React Native journey! If you're
+          looking for environment setup instructions, they've moved to
+          <u>their own section</u>. Continue reading for an introduction to the
+          documentation, Native Components, React, and more!
+        </p>
+        <span class="border_for_main" id="core_components"></span>
+        <p class="main_title">CORE COMPONENTS</p>
+        <p class="main_paragraph_text">
+          React Native is an open source framework for building Android and iOS
+          applications using React and the app platform’s native capabilities.
+          With React Native, you use JavaScript to access your platform’s APIs
+          as well as to describe the appearance and behavior of your UI using
+          React components: bundles of reusable, nestable code. You can learn
+          more about React in the next section. But first, let’s cover how
+          components work in React Native.
+        </p>
+        <span class="border_for_main" id="react_fundamentals"></span>
+        <p class="main_title">REACT FUNDAMENTALS</p>
+        <p class="main_paragraph_text">
+          React Native runs on <u>React</u>, a popular open source library for
+          building user interfaces with JavaScript. To make the most of React
+          Native, it helps to understand React itself. This section can get you
+          started or can serve as a refresher course. <br /><br />
+
+          We’re going to cover the core concepts behind React:
+          <br /><br />
+          <b>+ components.</b> The rest of this introduction to React uses cats
+          in its examples: friendly, approachable creatures that need names and
+          a cafe to work in. <br /><br />
+          <b>+ JSX.</b> React and React Native use JSX, a syntax that lets you
+          write elements inside JavaScript like so:
+          <code>&#60;Text&#62;</code> Hello, I am your cat!
+          <code>&#60;/Text&#62;</code>. The React docs have a comprehensive
+          guide to JSX you can refer to learn even more. Because JSX is
+          JavaScript, you can use variables inside it. Here you are declaring a
+          name for the cat, name, and embedding it with curly braces inside
+          <code>&#60;Text&#62;</code>.
+
+          <b>+ props.</b> Props is short for “properties”.
+
+          <b>+ state.</b> While you can think of props as arguments you use to
+          configure how components render, state is like a component’s personal
+          data storage. State is useful for handling data that changes over time
+          or that comes from user interaction. State gives your components
+          memory!
+        </p>
+        <span class="border_for_main" id="handling_text_input"></span>
+        <p class="main_title">HANDLING TEXT INPUT</p>
+        <p class="main_paragraph_text">
+          TextInput is a Core Component that allows the user to enter text. It
+          has an onChangeText prop that takes a function to be called every time
+          the text changed, and an onSubmitEditing prop that takes a function to
+          be called when the text is submitted. For example, let's say that as
+          the user types, you're translating their words into a different
+          language. In this new language, every single word is written the same
+          way: 🍕. So the sentence "Hello there Bob" would be translated as
+          "🍕🍕🍕".
+        </p>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
