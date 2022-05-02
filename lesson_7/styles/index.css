@@ -156,7 +156,7 @@ code {
 
 .container_for_main_elements_1 {
   height: 318px;
-  width: 1920px;
+  max-width: 1920px;
   top: 220px;
   position: relative;
   border-top: 1px solid #bfbfbf;
@@ -165,7 +165,7 @@ code {
 
 .container_for_main_elements_2 {
   height: 318px;
-  width: 1920px;
+  max-width: 1920px;
   top: 220px;
   position: relative;
   border-bottom: 1px solid #bfbfbf;
