@@ -13,6 +13,11 @@
   color: #2f281e;
 }
 
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 h1 {
   font-family: "simply olive";
 }
