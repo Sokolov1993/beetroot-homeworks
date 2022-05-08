@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "gilroy-medium";
+  src: url(../assets/fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "gilroy-bold";
+  src: url(../assets/fonts/Gilroy-Bold.ttf);
+}
+
+/* global*/
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body-general-preferences {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "gilroy-medium";
+  padding: 0px 250px;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Gilroy-Bold";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+
+a:hover {
+  color: #070707;
+}
+
+p {
+  font-family: "Gilroy-Medium";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h2 {
+  font-family: "Gilroy-Bold";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+/* header*/
+
+.nav-bar__list {
+  height: 87px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #828282;
+}
+
+.header-title-paragraph-lang {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 39px;
+}
+
+.header-title {
+  width: 118px;
+  font-family: "Gilroy-Bold";
+  font-weight: 400;
+  font-size: 47.3392px;
+  line-height: 59px;
+}
+
+.paragraph-header {
+  width: 155px;
+}
+
+.lang {
+  transform: rotate(270deg) translateY(25px);
+  width: 66px;
+}
+
+.lang a {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+}
+
+.hero-img {
+  margin-top: 50px;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+/* main_section_1_about_me*/
+
+.main-section-1-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 104px;
+  min-height: 506px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-about-me-section {
+  margin-bottom: 18px;
+}
+
+.about-me-box {
+  max-width: 485px;
+  text-align: center;
+}
+
+.about-me-box p {
+  margin-bottom: 60px;
+}
+
+/* main_section_2_skills*/
+
+.main-section-2-skills {
+  min-height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-programms {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 166px;
+  height: 206px;
+}
+
+.logo-box p {
+  font-family: "Gilroy-Bold";
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.section-2-logo-size {
+  width: 54%;
+  height: 88px;
+}
+
+.section-2-stars-size {
+  width: 100%;
+}
+
+/* main_section_3_portfolio*/
+
+.main-section-3-portfolio {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 2250px;
+  margin-top: 90px;
+}
+
+.sites-box-section-3 {
+  text-align: center;
+}
+
+.sites-box-section-3 img {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.sites-box-section-3 a {
+  font-family: "Gilroy-Medium";
+  color: #070707;
+}
+
+.sites-box-section-3 a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+
+.footer_properties {
+  height: 620px;
+  text-align: center;
+  padding-top: 114px;
+}
+
+.footer-references a {
+  color: #070707;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-references a:hover {
+  color: #828282;
+}
+
+.footer_properties button {
+  width: 180px;
+  height: 42px;
+  border: none;
+  background-color: black;
+  font-family: "Gilroy-Bold";
+  color: white;
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 91px;
+}
+
+.footer_properties button:hover {
+  cursor: pointer;
+  background-color: #828282;
+}
+
+.footer-logo-social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 343px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+footer > p,
+p:last-child a {
+  display: inline-block;
+  font-family: "Gilroy-Medium";
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+p:last-child a:hover {
+  color: #070707;
+}
