@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: "gilroy-bold", "sans-serif";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+}
+a:hover {
+  color: #070707;
+}
+
+p {
+  font-family: "gilroy-medium", "sans-serif";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h2 {
+  font-family: "gilroy-bold", "sans-serif";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.body-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "gilroy-medium", "sans-serif";
+  padding: 0px 250px;
+}
+@media screen and (max-width: 1024px) {
+  .body-container {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .body-container {
+    padding-top: 60px;
+  }
+}
+
+.nav-bar {
+  height: 87px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  border-bottom: 1px solid #828282;
+}
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    display: none;
+  }
+}
+
+.header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 39px;
+}
+.header-text h1 {
+  width: 118px;
+  font-family: "gilroy-bold", "sans-serif";
+  font-weight: 400;
+  font-size: 47.3392px;
+  line-height: 59px;
+}
+.header-text .header-text__paragraph {
+  width: 155px;
+}
+.header-text .header-text__lang {
+  transform: rotate(270deg) translateY(25px);
+  width: 66px;
+}
+@media screen and (max-width: 600px) {
+  .header-text .header-text__lang {
+    display: none;
+  }
+}
+.header-text .header-text__lang a {
+  font-family: "gilroy-bold", "sans-serif";
+  font-size: 16px;
+}
+
+.hero-img {
+  margin-top: 50px;
+}
+.hero-img img {
+  width: 100%;
+}
+
+.mobile-burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mobile-header {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+  .mobile-header p {
+    position: absolute;
+    top: 150px;
+  }
+  .mobile-header .mobile-burger-menu {
+    display: block;
+    max-width: 43px;
+  }
+  .mobile-header .mobile-burger-menu img {
+    height: 100%;
+    width: 100%;
+  }
+  .mobile-header .mobile-burger-menu img:hover {
+    cursor: pointer;
+  }
+}
+
+.mobile-hero {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .hero-desktop {
+    display: none;
+  }
+
+  .hero-img {
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+  }
+  .hero-img .mobile-hero {
+    display: block;
+    max-width: 476px;
+  }
+}
+.section-1-about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 104px;
+  min-height: 506px;
+  background-color: #f6f6f6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.section-1-about-me .section-1-about-me__title {
+  margin-bottom: 18px;
+}
+.section-1-about-me .section-1-about-me-text-wrapper {
+  max-width: 485px;
+  text-align: center;
+}
+.section-1-about-me .section-1-about-me-text-wrapper p {
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 600px) {
+  .section-1-about-me {
+    margin-top: 80px;
+  }
+}
+
+.section-2-skills {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  min-height: 610px;
+}
+@media screen and (max-width: 600px) {
+  .section-2-skills {
+    gap: 40px;
+    margin-top: 80px;
+  }
+}
+
+.section-2-skills-logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .section-2-skills-logo-wrapper {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 166px;
+  height: 206px;
+}
+.logo-box p {
+  font-family: "gilroy-bold", "sans-serif";
+  font-size: 14px;
+  line-height: 17px;
+}
+.logo-box .section-2-logo--size {
+  width: 54%;
+  height: 88px;
+}
+.logo-box .section-2-stars--size {
+  width: 95%;
+}
+
+.section-3-portfolio {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 90px;
+}
+.section-3-portfolio .section-3-portfolio-sites-wrapper {
+  text-align: center;
+}
+.section-3-portfolio .section-3-portfolio-sites-wrapper img {
+  width: 100%;
+  margin-bottom: 45px;
+}
+.section-3-portfolio .section-3-portfolio-sites-wrapper a {
+  font-family: "gilroy-medium", "sans-serif";
+  color: #070707;
+}
+.section-3-portfolio .section-3-portfolio-sites-wrapper a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+  .section-3-portfolio {
+    margin-top: 60px;
+  }
+}
+
+/* footer */
+.footer {
+  height: 620px;
+  text-align: center;
+  padding-top: 114px;
+}
+.footer .footer-references a {
+  color: #070707;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer .footer-references a:hover {
+  color: #828282;
+}
+
+.footer button {
+  width: 180px;
+  height: 42px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: "gilroy-bold", "sans-serif";
+  border-radius: 30px;
+  margin-top: 30px;
+  margin-bottom: 91px;
+}
+.footer button:hover {
+  cursor: pointer;
+  background-color: #828282;
+}
+@media screen and (max-width: 600px) {
+  .footer button {
+    width: 312px;
+  }
+}
+
+.footer-logo-social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 343px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+
+footer > p,
+p:last-child a {
+  display: inline-block;
+  font-family: "gilroy-medium", "sans-serif";
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+}
+
+p:last-child a:hover {
+  color: #070707;
+}
+
+@font-face {
+  font-family: "gilroy-medium";
+  src: url(../assets/fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "gilroy-bold";
+  src: url(../assets/fonts/Gilroy-Bold.ttf);
+}
+
+/*# sourceMappingURL=index.css.map */

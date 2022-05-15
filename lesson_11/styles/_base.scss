@@ -1,0 +1,34 @@
+@use "modules" as m;
+
+// global
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: m.$font-family-bold;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #828282;
+  &:hover {
+    color: #070707;
+  }
+}
+
+p {
+  font-family: m.$font-family-medium;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h2 {
+  font-family: m.$font-family-bold;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 42px;
+}

@@ -1,0 +1,21 @@
+//mixins
+
+@mixin button-style($-btn-w, $-btn-h, $-clrbckgr, $-clrfnt) {
+  width: $-btn-w;
+  height: $-btn-h;
+  background-color: $-clrbckgr;
+  color: $-clrfnt;
+}
+
+@mixin flex($-justify, $-align, $-direction: row) {
+  display: flex;
+  justify-content: $-justify;
+  align-items: $-align;
+  flex-direction: $-direction;
+}
+
+//variables
+
+$background-color-white: #f6f6f6;
+$font-family-bold: "gilroy-bold", "sans-serif";
+$font-family-medium: "gilroy-medium", "sans-serif";
