@@ -287,7 +287,8 @@ h2 {
 }
 @media screen and (max-width: 600px) {
   .footer button {
-    width: 312px;
+    max-width: 312px;
+    width: 100%;
   }
 }
 
@@ -297,6 +298,11 @@ h2 {
   width: 343px;
   margin: 0 auto;
   margin-bottom: 45px;
+}
+@media screen and (max-width: 600px) {
+  .footer-logo-social-media {
+    width: 100%;
+  }
 }
 
 footer > p,
