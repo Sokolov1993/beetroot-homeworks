@@ -301,6 +301,7 @@ h2 {
 }
 @media screen and (max-width: 600px) {
   .footer-logo-social-media {
+    max-width: 343px;
     width: 100%;
   }
 }
