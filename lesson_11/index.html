@@ -18,21 +18,39 @@
           <li><a href="#">Contacts</a></li>
         </ul>
       </nav>
+
+      <nav class="menu-mobile" id="menu-mobile">
+        <div class="mobile-menu-wrapper">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </div>
+        <div class="burger-menu--close" id="burger-menu--close">
+          <img
+            src="./assets/images/header/mobile_header/burger-menu--close.svg"
+            alt="burger menu close icon"
+          />
+        </div>
+      </nav>
+
       <div class="header-text mobile-header">
         <h1>Denis Novik</h1>
+        <div class="burger-menu--open" id="burger-menu--open">
+          <img
+            src="./assets/images/header/mobile_header/burger-menu.svg"
+            alt="burger menu icon"
+          />
+        </div>
         <p class="header-text__paragraph">
           UX | UI designer 24 years old, Minsk
         </p>
         <p class="header-text__lang">
           <a href="#">RU</a> | <a href="#">ENG</a>
         </p>
-        <div class="mobile-burger-menu">
-          <img
-            src="./assets/images/header/mobile_header/burger-logo.svg"
-            alt="burger-menu"
-          />
-        </div>
       </div>
+
       <div class="hero-img">
         <img
           src="./assets/images/header/hero_img.png"
@@ -61,6 +79,7 @@
           <p>Ready to implement excellent projects with wonderful people.</p>
         </div>
       </div>
+
       <div class="section-2-skills">
         <h2>Skills</h2>
         <p>I work in such programs as</p>
@@ -119,6 +138,7 @@
           </div>
         </div>
       </div>
+
       <div class="section-3-portfolio">
         <h2>Portfolio</h2>
         <div class="section-3-portfolio-sites-wrapper">
@@ -156,9 +176,11 @@
         <p>Want to know more or just chat?</p>
         <p>You are welcome!</p>
       </div>
+
       <form action="mailto:prokinoshow@gmail.com">
         <button type="submit">Send message</button>
       </form>
+
       <div class="footer-logo-social-media">
         <a href="#">
           <img
@@ -177,6 +199,7 @@
           <img src="./assets/images/footer/surface_logo.svg" alt="surface logo"
         /></a>
       </div>
+
       <p>
         Like me on
         <br />
@@ -186,5 +209,6 @@
         <a href="https://dribbble.com/" target="_blank">Dribble</a>
       </p>
     </footer>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>

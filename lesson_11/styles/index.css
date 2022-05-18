@@ -319,6 +319,62 @@ p:last-child a:hover {
   color: #070707;
 }
 
+.burger-menu--open {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .burger-menu--open {
+    display: block;
+    cursor: pointer;
+    padding-top: 20px;
+  }
+  .burger-menu--open img {
+    max-width: 42px;
+    width: 100%;
+  }
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .burger-menu--close {
+    cursor: pointer;
+  }
+  .burger-menu--close img {
+    width: 32px;
+  }
+
+  .menu-mobile {
+    width: 92%;
+    height: 600px;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 4;
+    background-color: #fff;
+    padding-top: 15px;
+  }
+  .menu-mobile li {
+    height: 40px;
+    list-style: none;
+  }
+  .menu-mobile a {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .menu-mobile .mobile-menu-wrapper {
+    max-width: 200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+  }
+  .menu-mobile .burger-menu--close img {
+    width: 32px;
+  }
+}
 @font-face {
   font-family: "gilroy-medium";
   src: url(../assets/fonts/Gilroy-Medium.ttf);
