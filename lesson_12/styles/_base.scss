@@ -1,0 +1,55 @@
+@use "variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/images/background-img.png);
+}
+
+h2 {
+  font-family: v.$main-titles-font;
+  font-size: 24px;
+  line-height: 0.8;
+  color: #222;
+}
+
+h1 {
+  font-family: v.$main-titles-font;
+  font-size: 32px;
+  line-height: 1.1;
+  color: #333;
+}
+
+p,
+em,
+a {
+  font-family: v.$main-text-font;
+}
+
+em {
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  color: #1f5c7a;
+  &:hover {
+    color: #469bd1;
+  }
+  &:visited {
+    color: hsla(200, 30%, 30%, 1);
+  }
+}
+
+ol {
+  padding-left: 40px;
+}

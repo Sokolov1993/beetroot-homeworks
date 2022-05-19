@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../assets/images/background-img.png);
+}
+
+h2 {
+  font-family: "quatro-ultraBold";
+  font-size: 24px;
+  line-height: 0.8;
+  color: #222;
+}
+
+h1 {
+  font-family: "quatro-ultraBold";
+  font-size: 32px;
+  line-height: 1.1;
+  color: #333;
+}
+
+p,
+em,
+a {
+  font-family: "Signika";
+}
+
+em {
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  color: #1f5c7a;
+}
+a:hover {
+  color: #469bd1;
+}
+a:visited {
+  color: hsl(200deg, 30%, 30%);
+}
+
+ol {
+  padding-left: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "header header header" "main main sidebar" "footer footer footer";
+  grid-gap: 30px;
+}
+
+.header {
+  grid-area: header;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+  background-color: rgba(51, 153, 204, 0.5);
+}
+
+.logo-wrapper {
+  justify-self: end;
+  max-width: 750px;
+  width: 100%;
+}
+.logo-wrapper h2:last-child {
+  padding-left: 1.1em;
+}
+
+.sidebar {
+  max-width: 200px;
+  justify-self: start;
+  grid-area: sidebar;
+  padding-right: 20px;
+}
+.sidebar ol {
+  margin: 8px;
+}
+
+.main {
+  grid-area: main;
+  height: 70vh;
+  max-width: 750px;
+  padding-left: 20px;
+  justify-self: end;
+}
+.main h1 {
+  margin-bottom: 20px;
+}
+.main p {
+  margin-bottom: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #eee;
+}
+.footer .footer-anchors {
+  padding-bottom: 7px;
+}
+
+.footer-wrapper {
+  max-width: 750px;
+}
+
+.footer-description strong {
+  font-size: 13px;
+}
+.footer-description i {
+  display: block;
+  font-size: 13px;
+  padding-bottom: 7px;
+}
+
+@font-face {
+  font-family: "quatro-ultraBold";
+  src: url(../assets/fonts/QuatroSlab-UltraBlack.woff2);
+}
+
+/*# sourceMappingURL=index.css.map */
