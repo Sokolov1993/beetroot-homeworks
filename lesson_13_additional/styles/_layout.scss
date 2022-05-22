@@ -1,0 +1,65 @@
+// modifiers
+
+.--violet-font {
+  color: #4a4ff2;
+}
+
+.--small-transparent-font {
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+//header
+
+.header {
+  grid-area: header;
+  min-height: 570px;
+  display: grid;
+  justify-items: center;
+}
+
+.header-wrapper {
+  display: grid;
+  max-width: 1100px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr;
+  align-items: end;
+}
+
+// main
+
+.main {
+  grid-area: main;
+  display: grid;
+  justify-items: center;
+}
+
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1100px;
+  width: 100%;
+  gap: 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+// footer
+
+.footer {
+  grid-area: footer;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer-wrapper {
+  display: grid;
+  max-width: 1100px;
+  width: 100%;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
