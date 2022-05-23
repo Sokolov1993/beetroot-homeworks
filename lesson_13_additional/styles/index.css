@@ -37,6 +37,7 @@ li {
   display: grid;
   width: 100%;
   grid-template-areas: "header header header" "main main main" "footer footer footer";
+  padding: 0px 15px;
 }
 
 .--violet-font {
