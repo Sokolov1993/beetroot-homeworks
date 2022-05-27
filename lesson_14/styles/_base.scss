@@ -1,0 +1,73 @@
+// variables
+
+$aleo-font-family: "Aleo", serif;
+$josefin-font-family: "Josefin Sans", sans-serif;
+
+// modyfiers
+
+.--button-purple {
+  background-color: #5474fd;
+}
+
+.--button-gradient {
+  background: linear-gradient(
+    45deg,
+    rgba(73, 107, 254, 1) 35%,
+    rgba(84, 116, 253, 1) 35%,
+    rgba(84, 116, 253, 1) 100%
+  );
+}
+
+.--to-uppercase-text {
+  text-transform: uppercase;
+}
+
+// base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+h1,
+h3,
+h5,
+p,
+input {
+  font-family: $josefin-font-family;
+}
+
+h2 {
+  font-family: $aleo-font-family;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  font-family: $aleo-font-family;
+  font-size: 14px;
+  line-height: 26px;
+  padding: 1%;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.--size {
+  max-width: 1173px;
+  width: 100%;
+  padding: 0px 10px;
+}
