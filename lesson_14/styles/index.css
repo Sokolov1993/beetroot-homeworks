@@ -425,13 +425,13 @@ button:hover {
 .footer__titles {
   text-align: center;
 }
-.footer__titles h1 {
+.footer__titles h3 {
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 8px;
   transition: transform ease-in-out 1s, box-shadow ease-in-out 1s;
 }
-.footer__titles h1:hover {
+.footer__titles h3:hover {
   transform: translatey(-3px);
   box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
 }
