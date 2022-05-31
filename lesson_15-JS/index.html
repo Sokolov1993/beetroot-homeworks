@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS lesson 1</title>
+  </head>
+  <body>
+    <div>
+      <h2>Калькулятор периметру квадрату</h2>
+      <label for="sideOfSquare">Введи довжину однієї зі сторін квадрату:</label>
+      <input type="number" id="sideOfSquare" />
+      <button id="button-0">Submit</button>
+      <p>Периметр квадрату: <span id="squarePerimeter"></span></p>
+    </div>
+
+    <div>
+      <h2>Калькулятор площі окружності</h2>
+      <label for="circleRadius">Введи радіус кола</label>
+      <input type="number" id="circleRadius" />
+      <button id="button">Submit</button>
+      <p>Результат: <span id="result"></span> метрів квадратних.</p>
+    </div>
+
+    <div>
+      <h2>Калькулятор оптимальної швидкості руху</h2>
+      <label for="distance">Відстань між містами:</label>
+      <input type="number" id="distance" />
+      <label for="timeLimit">Кількість годин на дорогу:</label>
+      <input type="number" id="timeLimit" />
+      <button id="button-2">Submit</button>
+      <p>
+        Щоб приїхати вчасно, ти маєш їхати зі швидкістю:
+        <span id="optimalSpeed"></span> км/г
+      </p>
+    </div>
+
+    <div>
+      <h2>Конвертер валют долар/євро</h2>
+      <label for="dollarsForExchange">Долар:</label>
+      <input type="number" id="dollarsForExchange" />
+      <button id="button-3">Submit</button>
+      <p>Євро: <span id="euroResult"></span></p>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
