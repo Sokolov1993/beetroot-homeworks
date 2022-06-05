@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesosn 3</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <form id="ageDetect" action="#" onsubmit="return false">
+      <h2>Перевірка віку</h2>
+      <label for="ageDetect__input">Вкажи свій вік </label>
+      <input
+        type="number"
+        min="0"
+        name="ageDetect__input"
+        id="ageDetect__input"
+        value=""
+        required
+      />
+      <button type="submit" id="ageDetect__button">Submit</button>
+      <p id="ageDetect__paragraph">
+        Результат: <span id="ageDetect__span"></span>
+      </p>
+    </form>
+
+    <form id="specialSymbolReturn" action="#" onsubmit="return false">
+      <h2>Спецсимвол числа</h2>
+      <label for="specialSymbolReturn__input">Напиши число від 0 до 9 </label>
+      <input
+        type="number"
+        min="0"
+        name="specialSymbolReturn__input"
+        id="specialSymbolReturn__input"
+        value=""
+        required
+      />
+      <button type="submit" id="specialSymbolReturn__button">Submit</button>
+      <p id="specialSymbolReturn__paragraph">
+        Результат: <span id="specialSymbolReturn__span"></span>
+      </p>
+    </form>
+
+    <form class="sumInRange" id="sumInRange" action="#" onsubmit="return false">
+      <h2>Сума всіх чисел у заданому діапазоні</h2>
+      <label for="sumInRange__start"
+        >Перше число
+        <input
+          type="number"
+          min="0"
+          name="sumInRange__start"
+          id="sumInRange__start"
+          value=""
+          required
+      /></label>
+      <label for="sumInRange__end" class="sumInRange__end"
+        >Друге число
+        <input
+          type="number"
+          min="0"
+          name="sumInRange__end"
+          id="sumInRange__end"
+          value=""
+          required
+      /></label>
+      <button type="submit" id="sumInRange__button">Submit</button>
+      <p id="sumInRange__paragraph">
+        Результат: <span id="sumInRange__span"></span>
+      </p>
+    </form>
+
+    <form
+      class="maxCommonDivisor"
+      id="maxCommonDivisor"
+      action="#"
+      onsubmit="return false"
+    >
+      <h2>Найбільший спільний дільник</h2>
+      <label for="maxCommonDivisor__firstNumber"
+        >Перше число
+        <input
+          type="number"
+          min="0"
+          name="maxCommonDivisor__firstNumber"
+          id="maxCommonDivisor__firstNumber"
+          value=""
+          required
+      /></label>
+      <label
+        for="maxCommonDivisor__secondNumber"
+        class="maxCommonDivisor__secondNumber"
+        >Друге число
+        <input
+          type="number"
+          min="0"
+          name="maxCommonDivisor__secondNumber"
+          id="maxCommonDivisor__secondNumber"
+          value=""
+          required
+      /></label>
+      <button type="submit" id="maxCommonDivisor__button">Submit</button>
+      <p id="maxCommonDivisor__paragraph">
+        Результат: <span id="maxCommonDivisor__span"></span>
+      </p>
+    </form>
+
+    <form id="allDivisorsOf" action="#" onsubmit="return false">
+      <h2>Всі дільники числа</h2>
+      <label for="allDivisorsOf__input">Введи число</label>
+      <input
+        type="number"
+        min="0"
+        name="allDivisorsOf__input"
+        id="allDivisorsOf__input"
+        value=""
+        required
+      />
+      <button type="submit" id="allDivisorsOf__button">Submit</button>
+      <p id="allDivisorsOf__paragraph">
+        Результат: <span id="allDivisorsOf__span"></span>
+      </p>
+    </form>
+
+    <form id="isPalindrome" action="#" onsubmit="return false">
+      <h2>Чи є число - паліндромом?</h2>
+      <label for="isPalindrome__input">Введи число</label>
+      <input
+        type="number"
+        min="0"
+        name="isPalindrome__input"
+        id="isPalindrome__input"
+        value=""
+        required
+      />
+      <button type="submit" id="isPalindrome__button">Submit</button>
+      <p id="isPalindrome__paragraph">
+        Результат: <span id="isPalindrome__span"></span>
+      </p>
+    </form>
+
+    <form id="calcDiscount" action="#" onsubmit="return false">
+      <h2>Підрахунок знижки</h2>
+      <label for="calcDiscount__input">Введи суму покупки</label>
+      <input
+        type="number"
+        min="0"
+        name="calcDiscount__input"
+        id="calcDiscount__input"
+        value=""
+        required
+      />
+      <button type="submit" id="calcDiscount__button">Submit</button>
+      <p id="calcDiscount__paragraph">
+        Результат: <span id="calcDiscount__span"></span>
+      </p>
+    </form>
+
+    <form id="typeOfNumbers" action="#" onsubmit="return false">
+      <h2>Сортування чисел за видами</h2>
+      <label for="typeOfNumbers__input">Введи 10 чисел через пробіл</label>
+      <input
+        type="text"
+        name="typeOfNumbers__input"
+        id="typeOfNumbers__input"
+        value=""
+        required
+      />
+      <button type="submit" id="typeOfNumbers__button">Submit</button>
+      <p id="typeOfNumbers__paragraph">
+        Результат: <span id="typeOfNumbers__span"></span>
+      </p>
+    </form>
+
+    <form id="dayOfWeekCycle" action="#" onsubmit="return false">
+      <h2>Цикл днів тижня</h2>
+      <label for="dayOfWeekCycle__input"
+        >А зараз я тобі покажу як виглядає найбезглуздіший цикл.</label
+      >
+      <button type="submit" id="dayOfWeekCycle__button">Start</button>
+    </form>
+
+    <form id="binarySearch" action="#" onsubmit="return false">
+      <h2>Бінарний пошук</h2>
+      <p>Загадай число від 0 до 100, а я спробую його вгадати!</p>
+      <button type="submit" id="binarySearch__button">Start</button>
+      <p id="binarySearch__paragraph">
+        Загадане число: <span id="binarySearch__span"></span>
+      </p>
+    </form>
+
+    <form id="multiplicationTable" action="#" onsubmit="return false">
+      <h2>Таблиця множення.</h2>
+      <p>Виведетсья лише в консолі.</p>
+      <button type="submit" id="multiplicationTable__button">YES!</button>
+    </form>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
