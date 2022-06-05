@@ -393,6 +393,9 @@ console.log(
 //TODO:Зацикли відображення днів тижня таким чином: «День тижня. Хочеш побачити наступний день? » і так до тих пір, поки користувач натискає OK.
 
 const dayOfWeekCycleButton = document.getElementById("dayOfWeekCycle__button");
+const dayOfWeekCycleResult = document.getElementById(
+  "dayOfWeekCycle_paragraph"
+);
 
 dayOfWeekCycleButton.onclick = function () {
   const dayOfWeek = ["пн", "вт", "ср", "чт", "пт", "сб", "нд"];
@@ -406,8 +409,8 @@ dayOfWeekCycleButton.onclick = function () {
     if (counter === 7) {
       counter = 0;
     } else if (flag !== true) {
-      dayOfWeekCycleResult.innerHTML =
-        "Ну, не хочеш - як хочеш. Якщо сподобалась гра - наступного разу покажу звідки на Білорусь готувався напад.";
+      // dayOfWeekCycleResult.innerHTML = "🇺🇦";
+      dayOfWeekCycleResult.classList.add("ua");
     }
   }
 };
