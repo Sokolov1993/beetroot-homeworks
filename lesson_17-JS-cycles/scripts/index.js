@@ -445,9 +445,10 @@ binarySearchButton.onclick = function () {
   let orderingNumber = 50;
   let gameFlag = true;
   let resultOfBinarySearch = 50;
+  let userAnswer;
 
   while (gameFlag) {
-    let userAnswer = prompt(
+    userAnswer = prompt(
       `Ваше число більше ${resultOfBinarySearch.toFixed(
         0
       )}, менше або дорівнює? Дай відповідь символом: >, <, =.`
@@ -458,12 +459,15 @@ binarySearchButton.onclick = function () {
     } else if (userAnswer === "<" && orderingNumber > 0) {
       orderingNumber /= 2;
       resultOfBinarySearch -= orderingNumber;
-    } else {
+    } else if (userAnswer === "=") {
       alert("Це було занадто просто!");
+      binarySearchResult.innerHTML = resultOfBinarySearch.toFixed(0);
+      gameFlag = false;
+    } else {
+      binarySearchResult.innerHTML = "Помилка вводу або відміна операції.";
       gameFlag = false;
     }
   }
-  binarySearchResult.innerHTML = resultOfBinarySearch.toFixed(0);
 };
 
 // Варіант з console.log
