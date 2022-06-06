@@ -409,7 +409,6 @@ dayOfWeekCycleButton.onclick = function () {
     if (counter === 7) {
       counter = 0;
     } else if (flag !== true) {
-      // dayOfWeekCycleResult.innerHTML = "🇺🇦";
       dayOfWeekCycleResult.classList.add("ua");
     }
   }
