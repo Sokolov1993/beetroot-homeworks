@@ -75,12 +75,7 @@ const newCar = {
 console.log(newCar.changeDrivers('Andriy'));
 
 // Розрахунок часу, який знадобиться на подолання вказаної відстані, при середній швидкості руху.
-console.log(
-  newCar.getTimeToArrival2(
-    +prompt('Введи відстань до пункту призначення:'),
-    prompt("Введи ім'я водія:")
-  )
-);
+console.log(newCar.getTimeToArrival2(900, 'Andriy'));
 
 // Вивести всю інформацію про автівку.
 console.log(newCar.getAllCarInfo());
