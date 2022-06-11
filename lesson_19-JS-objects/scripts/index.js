@@ -23,7 +23,13 @@ const newCar = {
   drivers: ['Oleksandr Sokolov', 'Ivan Ivanov'],
 
   getAllCarInfo() {
-    return newCar;
+    return console.log(`  Manufacturer: ${this.manufacturer}
+  Model: ${this.model}
+  Year of manufacture: ${this.yearOfManufacture}
+  Average speed: ${this.averageSpeed} km/h
+  Fuel tank size: ${this.fuelTank} l
+  Fuel Comsumption: ${this.fuelConsumption} l/100 km
+  Drivers: ${this.drivers.join(', ')}.`);
   },
 
   changeDrivers(driverName) {
@@ -48,7 +54,8 @@ const newCar = {
   },
 
   getTimeToArrival2(distance, driverName) {
-    let timeToArrival = +(distance / this.averageSpeed).toFixed(0);
+    let timeToArrival = +(distance / this.averageSpeed);
+    console.log(timeToArrival);
     let refuel = this.getCarRefueling(distance);
     let restCounter = 0;
 
@@ -62,11 +69,12 @@ const newCar = {
     }
 
     return refuel > 0
-      ? `Ти проїхав ${distance} км. за ${
+      ? `  Ти проїхав ${distance} км. за ${Math.floor(
           timeToArrival + restCounter
-        } год. Використав ${this.getFuelUsed(distance).toFixed(
-          0
-        )} л. бензину. Зробив ${restCounter} привали на годинний відпочинок.`
+        )} год. ${((timeToArrival * 60) % 60).toFixed(0)} хв.
+  Використав ${this.getFuelUsed(distance).toFixed(
+    0
+  )} л. бензину. Зробив ${restCounter} привали на годинний відпочинок.`
       : `На цю подорож, палива не вистачить.`;
   },
 };
