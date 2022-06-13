@@ -139,3 +139,44 @@ const newCar = {
 console.log(newCar.getCarRefueling(400));
 console.log(newCar.getTimeToArrival(500));
 */
+
+/******************************************************************************/
+
+/*
+Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
+Для виведення часу на екран.
+Зміни часу на передане кількість секунд.
+Зміни часу на передане кількість хвилин.
+Зміни часу на передане кількість годин.
+Врахуйте, що в останніх 3-х функціях, при зміні однієї частини часу, може змінитися і інша. Наприклад: якщо до часу «20:59:45» додати 30 секунд, то повинно вийти «21:00:15», а не «20:30:75». Також потрібно передбачити можливість того що користувач може передати 150 секунд, або 75 хвилин. 
+*/
+
+const time = new Date();
+
+const timeMachine = {
+  changeHours(hours = 0) {
+    return time.getHours(time.setHours(hours));
+  },
+
+  changeMinutes(minutes = 0) {
+    return time.getMinutes(time.setMinutes(minutes));
+  },
+
+  changeSeconds(seconds = 0) {
+    return time.getSeconds(time.setSeconds(seconds));
+  },
+
+  getFullTime() {
+    return console.log(
+      `${time.getHours() < 10 ? '0' + time.getHours() : time.getHours()}:${
+        time.getMinutes() < 10 ? '0' + time.getMinutes() : time.getMinutes()
+      }:${time.getSeconds() < 10 ? '0' + time.getSeconds() : time.getSeconds()}`
+    );
+  },
+};
+
+timeMachine.changeHours(2);
+timeMachine.changeMinutes(10);
+timeMachine.changeSeconds(1);
+console.log(timeMachine.getFullTime());
+console.log(time);
