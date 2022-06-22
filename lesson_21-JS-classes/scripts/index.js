@@ -28,7 +28,6 @@ class Circle {
 
 const circleObj = new Circle(2);
 
-console.log(circleObj); //до виклику сетера
 circleObj.circleR = 4;
 console.log(circleObj); //після виклику сетера
 console.log(circleObj.circleRadius); //виклик гетера, який повертає радіус
