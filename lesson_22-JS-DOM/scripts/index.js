@@ -93,14 +93,22 @@ trafficLightControlBtn.addEventListener('click', () => {
       break;
 
     case 1:
+      trafficLightRed.style.backgroundColor = 'black';
       trafficLightOrange.style.backgroundColor = 'orange';
       break;
 
     case 2:
+      trafficLightOrange.style.backgroundColor = 'black';
       trafficLightGreen.style.backgroundColor = 'green';
       break;
 
     case 3:
+      trafficLightRed.style.backgroundColor = 'red';
+      trafficLightOrange.style.backgroundColor = 'orange';
+      trafficLightGreen.style.backgroundColor = 'green';
+      break;
+
+    case 4:
       trafficLightRed.style.backgroundColor = 'black';
       trafficLightOrange.style.backgroundColor = 'black';
       trafficLightGreen.style.backgroundColor = 'black';
