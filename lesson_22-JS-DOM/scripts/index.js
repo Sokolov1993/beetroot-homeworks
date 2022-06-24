@@ -44,8 +44,8 @@ const playlist = [
 
 const orderedList = document.querySelector('#ordered-list');
 
-for (let key in playlist) {
-  let { author, song } = playlist[key];
+for (let value of playlist) {
+  let { author, song } = value;
   const orderedListElement = document.createElement('li');
 
   orderedList.appendChild(orderedListElement);
