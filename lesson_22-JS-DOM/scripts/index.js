@@ -116,5 +116,5 @@ trafficLightControlBtn.addEventListener('click', () => {
       break;
   }
 
-  trafficLightsFlag += 1;
+  trafficLightsFlag++;
 });
