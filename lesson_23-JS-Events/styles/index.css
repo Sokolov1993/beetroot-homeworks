@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.showTextArea {
+  max-width: 500px;
+  width: 100%;
+  height: 310px;
+  padding: 10px;
+  border: 1px solid rgb(118, 118, 118);
+}
+.showTextArea .text {
+  display: inline-block;
+}
+
+.textAreaInput {
+  display: none;
+  max-width: 500px;
+  width: 100%;
+  height: 310px;
+  padding: 10px;
+}
+
+table {
+  height: 500px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+table td {
+  border: 1px solid #333;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
+
+.sort {
+  cursor: pointer;
+}
+
+.resizableBlock {
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
