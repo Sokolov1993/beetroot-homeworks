@@ -78,8 +78,6 @@ sortEventTarget.addEventListener('click', sortTable);
 /* 
 TODO:
 Створити HTML-сторінку з блоком тексту в рамці. Реалізувати можливість змінювати розмір блоку, якщо затиснути мишку в правому нижньому кутку і тягнути її далі. 
-mousedown - кнопка зажата. Змінюємо розмір блоку.
-click - кнопка відпущена. Зберігаємо розмір блоку. 
 */
 
 const resizeBlock = document.querySelector('#resizableBlockP');
