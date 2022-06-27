@@ -20,7 +20,6 @@ const textEditorBehaviorControl = (event) => {
     inputTextArea.style.display = 'inline-block';
     inputTextArea.removeAttribute('readonly');
     inputTextArea.innerHTML = showTextArea.textContent.trim();
-    console.log('I`m work!');
   } else if (
     event.ctrlKey === true &&
     (event.key === '+' || event.key === '=')
