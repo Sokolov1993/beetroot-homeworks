@@ -1,4 +1,4 @@
-/*
+/* TODO:
 Створити HTML-сторінку для відображення/редагування тексту. 
 
 При відкритті сторінки текст відображається за допомогою тега div. 
@@ -8,8 +8,6 @@
 При натисканні Ctrl +, замість textarea з'являється div з уже зміненим текстом. 
 Не забудь вимкнути поведінку за замовчуванням для цих поєднань клавіш.
 */
-
-//  Преписать switch case на if/else
 
 const textEditorBehaviorControl = (event) => {
   const showTextArea = document.querySelector('#textParagraph');
@@ -37,7 +35,7 @@ const textEditorBehaviorControl = (event) => {
 document.addEventListener('keydown', textEditorBehaviorControl);
 
 /* 
-
+TODO:
 Створити HTML-сторінку з великою таблицею. При кліку на заголовок стовпця, необхідно відсортувати дані цього стовпця. Врахуй, що числові значення повинні сортуватися як числа, а не як рядки.
 
 */
@@ -77,7 +75,9 @@ const sortTable = () => {
 
 sortEventTarget.addEventListener('click', sortTable);
 
-/* Створити HTML-сторінку з блоком тексту в рамці. Реалізувати можливість змінювати розмір блоку, якщо затиснути мишку в правому нижньому кутку і тягнути її далі. 
+/* 
+TODO:
+Створити HTML-сторінку з блоком тексту в рамці. Реалізувати можливість змінювати розмір блоку, якщо затиснути мишку в правому нижньому кутку і тягнути її далі. 
 mousedown - кнопка зажата. Змінюємо розмір блоку.
 click - кнопка відпущена. Зберігаємо розмір блоку. 
 */
@@ -111,55 +111,3 @@ const dragFunction = (event) => {
 };
 
 resizeBlock.addEventListener('mousedown', dragFunction);
-
-/* 
-Debugging version 
-
-
-const table = document.querySelectorAll('tr');
-console.log(table);
-
-const arrayFromTable = Array.from(table);
-console.log(arrayFromTable);
-console.log(arrayFromTable[1]['cells']); //набір назв колонок 0 -text
-console.log(arrayFromTable[2]['cells'][0]);
-
-console.log(table[2]['cells']);
-
-const sortEventTarget = document.querySelector('#sortEventTarget');
-
-const sortTable = () => {
-  //text copy
-  let sortedArray = [];
-  for (let column = 0; column < arrayFromTable[1]['cells'].length; column++) {
-    for (let row = 2; row < arrayFromTable.length; row++) {
-      console.log(arrayFromTable[row]['cells'][column]);
-      sortedArray.push(arrayFromTable[row]['cells'][column].innerText);
-    }
-  }
-
-  //sort new array
-  sortedArray.sort((a, b) => {
-    if (isNaN(a)) {
-      return a > b ? 1 : -1; //string sort algorithm
-    } else {
-      return +a - +b;
-    }
-  });
-
-  // sorted text insert
-  let count = 0;
-  for (let column = 0; column < arrayFromTable[1]['cells'].length; column++) {
-    for (let row = 2; row < arrayFromTable.length; row++) {
-      arrayFromTable[row]['cells'][column].innerText = sortedArray[count];
-      count++;
-    }
-  }
-
-  console.log('Sorted array:', sortedArray);
-};
-
-sortEventTarget.addEventListener('click', sortTable);
-
-
-*/
