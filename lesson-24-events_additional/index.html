@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 24 form validation</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <main class="wrapper" id="mainContentObj">
+      <div class="main__login__btn" id="loginDivObj">
+        <h2 class="login__title" id="loginTitle">Please login</h2>
+        <button type="submit" class="login__btn" id="loginBtnObj">
+          SHOW LOGIN FORM
+        </button>
+      </div>
+
+      <form class="main__loginForm" id="loginFormObj">
+        <i class="fa-solid fa-xmark" id="xmarkCloseForm"></i>
+        <h2 class="main__loginForm__title">LOGIN</h2>
+        <p class="main__loginForm__paragraph">
+          Please enter your login and password
+        </p>
+
+        <label for="loginInputFieldObj" class="label">
+          <span class="label__text"> Login: </span>
+          <input
+            type="text"
+            class="login__inputField"
+            id="loginInputFieldObj"
+            name="login"
+            placeholder="Login"
+            required
+          />
+        </label>
+
+        <label for="passwordInputFieldObj" class="label">
+          <span class="label__text"> Password:</span>
+          <input
+            type="password"
+            class="password__inputField"
+            id="passwordInputFieldObj"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <i class="fa-solid fa-eye" id="openEye"></i>
+          <i class="fa-solid fa-eye-slash" id="closeEye"></i>
+        </label>
+
+        <a href="#" class="main_loginForm_anchor"
+          ><p class="main__loginForm__paragraph" id="passwordForgot">
+            Forgot password?
+          </p></a
+        >
+
+        <button
+          type="submit"
+          class="main__loginForm__button"
+          id="submitFormBtnObj"
+        >
+          LOGIN
+        </button>
+      </form>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/855fb0c883.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
