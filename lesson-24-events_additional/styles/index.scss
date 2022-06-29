@@ -54,6 +54,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 20%;
+
+  @media screen and (max-width: 1150px) {
+    background-image: url(../assets/images/background-tablet.webp);
+  }
+
+  @media screen and (max-width: 750px) {
+    background-image: url(../assets/images/background-mobile.webp);
+  }
 }
 
 .wrapper {
@@ -153,7 +161,7 @@ body {
 
   .fa-eye {
     position: absolute;
-    left: 327px;
+    right: 10px;
     color: gray;
     transition: color ease-in-out 0.4s;
 
@@ -165,7 +173,7 @@ body {
   .fa-eye-slash {
     visibility: hidden;
     position: absolute;
-    left: 327px;
+    right: 9px;
     color: gray;
     transition: color ease-in-out 0.4s;
 

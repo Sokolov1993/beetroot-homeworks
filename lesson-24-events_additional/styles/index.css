@@ -49,6 +49,16 @@ body {
   background-repeat: no-repeat;
   background-position: 0% 20%;
 }
+@media screen and (max-width: 1150px) {
+  body {
+    background-image: url(../assets/images/background-tablet.webp);
+  }
+}
+@media screen and (max-width: 750px) {
+  body {
+    background-image: url(../assets/images/background-mobile.webp);
+  }
+}
 
 .wrapper {
   max-width: 900px;
@@ -132,7 +142,7 @@ body {
 }
 .main__loginForm .fa-eye {
   position: absolute;
-  left: 327px;
+  right: 10px;
   color: gray;
   transition: color ease-in-out 0.4s;
 }
@@ -142,7 +152,7 @@ body {
 .main__loginForm .fa-eye-slash {
   visibility: hidden;
   position: absolute;
-  left: 327px;
+  right: 9px;
   color: gray;
   transition: color ease-in-out 0.4s;
 }
