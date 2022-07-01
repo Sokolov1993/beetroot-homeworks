@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson 25 slick slider</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="wrapper">
+          <div class="header-container">
+            <div class="header__logo">
+              <img
+                src="./assets/images/header/header-logo.svg"
+                alt="onWave header logo"
+              />
+            </div>
+            <ul class="header__menu">
+              <li>
+                <a href="#"> Home </a>
+              </li>
+              <li>
+                <a href="#"> Catalog </a>
+              </li>
+              <li>
+                <a href="#"> News </a>
+              </li>
+              <li>
+                <a href="#"> Contacts </a>
+              </li>
+            </li>
+          </ul>
+
+            <div class="header__icons-panel">
+              <a href="#">
+                <img
+                  src="./assets/images/header/search-icon.svg"
+                  alt="header search icon"
+              /></a>
+              <a href="#">
+                <img
+                  src="./assets/images/header/profile-icon.svg"
+                  alt="header profile icon"
+                  class="header__icons-panel__profile-icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__section-1">
+          <div class="swiper" id="swiper-1">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <h1 class="titleOnSLides">Find your own style</h1>
+                <button class="buttonOnSLides">View more</button>
+                <img
+                  src="./assets/images/main/section-1-slider/picture-1.jpg"
+                  alt="image 1 for section 1"
+                  class="image-1-for-section-1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h1 class="titleOnSLides2">expand your horizons</h1>
+                <button class="buttonOnSLides2">View more</button>
+                <img
+                  src="./assets/images/main/section-1-slider/picture-2.jpg"
+                  alt="image 2 for section 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <h1 class="titleOnSLides3">discover new options</h1>
+                <button class="buttonOnSLides3">View more</button>
+                <img
+                  src="./assets/images/main/section-1-slider/picture-3.jpg"
+                  alt="image 3 for section 1"
+                />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination" id="swiper-pagination-first"></div>
+          </div>
+
+          <div class="wrapper"></div>
+        </section>
+
+        <section class="main__section-2">
+          <h2 class="main_section-2__title">new arrivals</h2>
+          <div class="swiper mySwiper" id="swiper-2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-2-slider/product-item-1.jpg"
+                  alt="guitar slide 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-2-slider/product-item-2.jpg"
+                  alt="guitar slide 2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-2-slider/product-item-3.jpg"
+                  alt="guitar slide 3"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-2-slider/product-item-4.jpg"
+                  alt="guitar slide 4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-2-slider/product-item-5.jpg"
+                  alt="guitar slide 5"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="main__section-2__button">View more</button>
+          <div
+            class="swiper-button-next"
+            id="swiper-buttonNext-section-2"
+          ></div>
+          <div
+            class="swiper-button-prev"
+            id="swiper-buttonPrev-section-2"
+          ></div>
+        </section>
+
+        <section class="main__section-3">
+          <div class="main__section-3__container">
+          <h2>our partners</h2>
+          <!-- Swiper -->
+          <div class="swiper mySwiper" id="swiper-3">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item1.svg"
+                  alt="partner logo 1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item2.svg"
+                  alt="partner logo 2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item3.svg"
+                  alt="partner logo 3"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item4.svg"
+                  alt="partner logo 4"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item5.svg"
+                  alt="partner logo 5"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item6.svg"
+                  alt="partner logo 6"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item7.svg"
+                  alt="partner logo 7"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item8.svg"
+                  alt="partner logo 8"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/images/main/section-3-slider/item9.svg"
+                  alt="partner logo 9"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-button-next"
+            id="swiper-buttonNext-section-3"
+          ></div>
+          <div
+            class="swiper-button-prev"
+            id="swiper-buttonPrev-section-3"
+          ></div>
+        </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="footer-container">
+            <div class="footer__logo">
+              <img
+                src="./assets/images/footer/footer-logo.svg"
+                alt="footer logo"
+              />
+              <ul>
+                <li>Home</li>
+                <li>Catalog</li>
+                <li>News</li>
+                <li>Contacts</li>
+              </ul>
+            </div>
+            <div class="footer__contuctUs">
+              <a href="#" class="footer__contuctUs__anchor">Contact Us</a>
+              <div class="footer__contuctUs__social-media">
+                <a href="#">
+                  <img
+                    src="./assets/images/footer/facebook.svg"
+                    alt="facebook logo"
+                /></a>
+                <a href="#">
+                  <img
+                    src="./assets/images/footer/instagram.svg"
+                    alt="instagram logo"
+                /></a>
+                <a href="#">
+                  <img
+                    src="./assets/images/footer/pinterest.svg"
+                    alt="pinterest logo"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./assets/images/footer/twitter.svg"
+                    alt="twitterlogo"
+                /></a>
+                <a href="#">
+                  <img
+                    src="./assets/images/footer/youtube.svg"
+                    alt="youtube logo"
+                /></a>
+              </div>
+              <a href="tel:0800 300 4040" class="footer_contuctUs__telephone"
+                >0800 300 4040</a
+              >
+            </div>
+          </div>
+          <p class="footer__copyright">© Copyright 2022. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
