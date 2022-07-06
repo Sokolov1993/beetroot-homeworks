@@ -1,0 +1,31 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.passenger_style {
+  max-width: 1200px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.fa-solid {
+  font-size: 30px;
+}
+.fa-solid:hover {
+  cursor: pointer;
+  color: chocolate;
+}
+
+.page {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*# sourceMappingURL=index.css.map */
